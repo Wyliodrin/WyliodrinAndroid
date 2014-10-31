@@ -5,7 +5,7 @@ This allows you to send messages to your boards connected to Wyliodrin. The API 
 
 To send messages, you need to set up two parts:
   * one on the board (via Wyliodrin)
-  * one on the iOS device (via this SDK)
+  * one on the Android device (via this SDK)
 
 Semantics
 ---------
@@ -27,10 +27,10 @@ Create a new Python project and write
     # register for messages on label 'label'
     openConnection('label', messages)
 
-iOS API
--------
+Android API
+-----------
 
-Create a new iOS project and place the files inside the src folder into your project. This will give you access 
+Create a new Android project and place the files inside the src folder into your project. This will give you access 
 to the class WylioBoard. Here is are some usage exampe:
 
     // Register a board
