@@ -30,7 +30,7 @@ Create a new Python project and write
 iOS API
 -------
 
-Create a new iOS project and place the .h and .m fils inside it. This will give you access 
+Create a new iOS project and place the files inside the src folder into your project. This will give you access 
 to the class WylioBoard. Here is are some usage exampe:
 
     // Register a board
