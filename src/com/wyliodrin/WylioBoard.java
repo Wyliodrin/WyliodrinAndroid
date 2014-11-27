@@ -32,7 +32,7 @@ public class WylioBoard {
 		}
 	}
 	
-	public void sendMessage (String label, double message)
+	public void sendMessage (String label, double message) 
 	{
 		if (boardid != null)
 		{
@@ -44,7 +44,7 @@ public class WylioBoard {
 		}
 	}
 	
-	public void sendMessage (String label, JSONObject message)
+	public void sendMessage (String label, JSONObject message) 
 	{
 		if (boardid != null)
 		{
@@ -59,58 +59,100 @@ public class WylioBoard {
 	public static void sendMessage (String communication_token, String boardid, String label, String message)
 	{
 		final JSONObject json = new JSONObject();
-		json.put("communication_token", communication_token);
-		json.put("gadgetid", boardid);
-		json.put("label", label);
-		json.put("message", message);
-		sendOpenMessage(json);
+		try
+		{
+			json.put("communication_token", communication_token);
+			json.put("gadgetid", boardid);
+			json.put("label", label);
+			json.put("message", message);
+			sendOpenMessage(json);
+		}
+		catch (Exception ex)
+		{
+			System.out.println("WylioBoard: "+ex);
+		}
 	}
 	
 	public static void sendMessage (String communication_token, String boardid, String label, double message)
 	{
 		final JSONObject json = new JSONObject();
-		json.put("communication_token", communication_token);
-		json.put("gadgetid", boardid);
-		json.put("label", label);
-		json.put("message", message);
-		sendOpenMessage(json);
+		try
+		{
+			json.put("communication_token", communication_token);
+			json.put("gadgetid", boardid);
+			json.put("label", label);
+			json.put("message", message);
+			sendOpenMessage(json);
+		}
+		catch (Exception ex)
+		{
+			System.out.println("WylioBoard: "+ex);
+		}
 	}
 	
 	public static void sendMessage (String communication_token, String boardid, String label, JSONObject message)
 	{
 		final JSONObject json = new JSONObject();
-		json.put("communication_token", communication_token);
-		json.put("gadgetid", boardid);
-		json.put("label", label);
-		json.put("message", message);
-		sendOpenMessage(json);
+		try
+		{
+			json.put("communication_token", communication_token);
+			json.put("gadgetid", boardid);
+			json.put("label", label);
+			json.put("message", message);
+			sendOpenMessage(json);
+		}
+		catch (Exception ex)
+		{
+			System.out.println("WylioBoard: "+ex);
+		}
 	}
 	
 	public static void sendOpenMessage (String communication_token, String label, String message)
 	{
 		final JSONObject json = new JSONObject();
-		json.put("communication_token", communication_token);
-		json.put("label", label);
-		json.put("message", message);
-		sendOpenMessage(json);
+		try
+		{
+			json.put("communication_token", communication_token);
+			json.put("label", label);
+			json.put("message", message);
+			sendOpenMessage(json);
+		}
+		catch (Exception ex)
+		{
+			System.out.println("WylioBoard: "+ex);
+		}
 	}
 	
 	public static void sendOpenMessage (String communication_token, String label, double message)
 	{
 		final JSONObject json = new JSONObject();
-		json.put("communication_token", communication_token);
-		json.put("label", label);
-		json.put("message", message);
-		sendOpenMessage(json);
+		try
+		{
+			json.put("communication_token", communication_token);
+			json.put("label", label);
+			json.put("message", message);
+			sendOpenMessage(json);
+		}
+		catch (Exception ex)
+		{
+			System.out.println("WylioBoard: "+ex);
+		}
 	}
 	
 	public static void sendOpenMessage (String communication_token, String label, JSONObject message)
 	{
 		final JSONObject json = new JSONObject();
-		json.put("communication_token", communication_token);
-		json.put("label", label);
-		json.put("message", message);
-		sendOpenMessage(json);
+		try
+		{
+			json.put("communication_token", communication_token);
+			json.put("label", label);
+			json.put("message", message);
+			sendOpenMessage(json);
+		}
+		catch (Exception ex)
+		{
+			System.out.println("WylioBoard: "+ex);
+		}
 	}
 	
 	public static void sendOpenMessage (JSONObject json)
